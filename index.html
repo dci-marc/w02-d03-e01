@@ -3,38 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Recipe</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="author" content="Mysterious Cookie Monster">
-    <meta name="description" content="A simple recipe for vegan chocolate chip cookies.">
-    <meta name="keywords" content="vegan, chocolate chip, cookies">
-    <meta name="revised" content="Mysterious Cookie Monster, 2020-09-15">
-    <meta name="revisit-after" content="3 days">
-    <meta name="robots" content="index, follow">
+    <title>Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        #content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 200px;
+            text-align: center;
+        }
+        .product-image img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .product-title h2 {
+            font-size: 1.2em;
+            margin: 0 0 10px;
+        }
+        .product-seller p,
+        .product-price p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-    <h1>Vegan Chocolate Chip Cookies</h1>
-    <div class="content">
-        <img src="https://www.allrecipes.com/thmb/8xwaWAHtl_QLij6D-G0Z4B1HDVA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/10813-best-chocolate-chip-cookies-mfs-146-4x3-b108aceffa6043a1ac81c3c5a9b034c8.jpg" alt="Chocolate Chip Cookies. Yummy!">
-        <p>These delicious vegan chocolate chip cookies are quick and easy to make!</p>
+    <div id="content">
+        <div class="product">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+            </div>
+            <div class="product-title">
+                <h2>Product Title 1</h2>
+            </div>
+            <div class="product-seller">
+                <p>Infamous John</p>
+            </div>
+            <div class="product-price">
+                <p>$9.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+            </div>
+            <div class="product-title">
+                <h2>Product Title 2</h2>
+            </div>
+            <div class="product-seller">
+                <p>Infamous John</p>
+            </div>
+            <div class="product-price">
+                <p>$10.99</p>
+            </div>
+        </div>
+        <div class="product">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/150" alt="Product Image">
+            </div>
+            <div class="product-title">
+                <h2>Product Title 3</h2>
+            </div>
+            <div class="product-seller">
+                <p>Infamous John</p>
+            </div>
+            <div class="product-price">
+                <p>$6.99</p>
+            </div>
+        </div>
     </div>
-    <br>
-    <h2>Ingredients:</h2>
-    <ul>
-        <li>1 cup of vegan butter</li>
-        <li>1 cup of sugar</li>
-        <li>2 vegan eggs</li>
-        <li>2 cups of flour</li>
-        <li>2 cups of vegan chocolate chips</li>
-    </ul>
-    <h2>Intructions:</h2>
-    <ol>
-        <li>Preheat the oven to 350°F (175°C).</li>
-        <li>Mix vegan butter and sugar together.</li>
-        <li>Add vegan eggs and mix well.</li>
-        <li>Gradually add flour and stir.</li>
-        <li>Mix in vegan chocolate chips.</li>
-        <li>Bake for 10-12 minutes until golden.</li>
-    </ol>
 </body>
 </html>
